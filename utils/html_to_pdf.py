@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Dict, Any
+from typing import Any
 import requests
 
 from weasyprint import HTML
@@ -18,7 +18,7 @@ def _sec_url_fetcher(user_agent: str, timeout_sec: int):
     (images, CSS, fonts, etc.).
     """
 
-    def fetch(url: str) -> Dict[str, Any]:
+    def fetch(url: str) -> dict[str, Any]:
         r = requests.get(url, headers={"User-Agent": user_agent}, timeout=timeout_sec)
         r.raise_for_status()
         return {
