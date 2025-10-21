@@ -11,7 +11,7 @@ SEC_BASE = "https://data.sec.gov"
 ARCHIVES = "https://www.sec.gov/Archives/edgar/data"
 
 
-@dataclass(frozen=True)
+@dataclass
 class TenKInfo:
     company_name: str
     ticker: str
