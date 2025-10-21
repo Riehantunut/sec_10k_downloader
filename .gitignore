@@ -1,0 +1,5 @@
+data
+reports
+.vscode
+__pycache__
+*.ipynb
